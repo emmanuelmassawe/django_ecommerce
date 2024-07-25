@@ -53,7 +53,7 @@ NOTIFY_EMAIL: str = env('NOTIFY_EMAIL', default='')
 
 # Middleware
 MIDDLEWARE = [
-    'allauth.account.middleware.Accountmiddleware'
+    'allauth.account.middleware.Accountmiddleware',
 ]
 # region
 MIDDLEWARE: List[str] = [
