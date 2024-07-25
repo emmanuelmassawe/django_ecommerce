@@ -49,9 +49,12 @@ INSTALLED_APPS = [
 
 
 DEFAULT_FROM_EMAIL = env.str('DEFAULT_FROM_EMAIL', '')
-NOTIFY_EMAIL: str = env('NOTIFY_EMAIL', '')
+NOTIFY_EMAIL: str = env('NOTIFY_EMAIL', default='')
 
 # Middleware
+MIDDLEWARE = [
+    'allauth.account.middleware.Accountmiddleware'
+]
 # region
 MIDDLEWARE: List[str] = [
     'django.middleware.security.SecurityMiddleware',
