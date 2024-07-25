@@ -49,7 +49,7 @@ INSTALLED_APPS = [
 
 
 DEFAULT_FROM_EMAIL = env.str('DEFAULT_FROM_EMAIL', '')
-NOTIFY_EMAIL: str = env('NOTIFY_EMAIL', '')
+NOTIFY_EMAIL: str = env('NOTIFY_EMAIL', default='')
 
 # Middleware
 # region
